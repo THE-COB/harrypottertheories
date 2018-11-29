@@ -14,7 +14,8 @@
 		 
 <div class="jumbotron text-center">
  <h1>Harry Potter Theories</h1>
- <p>"Use my knowledge, I beg you" -The Senate</p> 
+ <p>"Use my knowledge, I beg you" -The Senate</p>
+ <button id="timelineButton" type="button" class="btn">Timeline</button> 
 </div>
 
 <div class="container">
@@ -52,7 +53,7 @@
 	</div>
 </div>
 
-<div class="container">
+<div class="container" id="timeline">
 	<div class="row">
 		<div class="col-lg-12">
 			<h1>Timeline</h1>
@@ -63,6 +64,17 @@
 </div>
 
 </body>
+
+<script type="text/javascript">
+	/*$(document).ready(function(){
+		
+	});*/
+	$("#timelineButton").click(function(){
+		$("html, body").animate({
+			"scrollTop": $("#timeline").offset().top
+		}, 2000);
+	});
+</script>
 
 <style>
 h1 {
